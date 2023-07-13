@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Picture In Picture</title>
-</head>
-<body>
-    <!-- Video -->
-    <video src="Nominate your 2023 Champion of the Earth focused on solutions to eliminate plastic pollution.mp4" id="video"  height="360" width="640" ></video>
-    
-    <!-- Button -->
-    <div class="button-container">
-        <button id="button-add">Add</button>
-        <button id="button-play">Play</button>
-        <button id="button-pause">Pause</button>
+  </head>
+  <body>
+    <div class="play-container">
+      <div class="image-container">
+        <img src="" alt="Album Art" srcset="" />
+      </div>
+      <h2 id="title"></h2>
+      <h3 id="artist"></h3>
+      <audio src="" ></audio>
+      <!-- Progress -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-warpper">
+          <span id="current-time">0:00</span>
+          <span id="duration">2:06</span>
+        </div>
+      </div>
+      <!-- controls -->
+      <div class="player-controls" id="player-controls">
+        <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+        <i class="fa-solid fa-play" id="play" title="Play"></i>
+        <i class="fa-solid fa-forward" id="next" title="Previous"></i>
+      </div>
     </div>
 
     <!-- script js -->
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
